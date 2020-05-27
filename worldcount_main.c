@@ -3,16 +3,12 @@
 #include<String.h>
 //函数入口
 /*
-*执行的时候输入：
-*WordCount.exe -[c][w] [文件名全路径]
-*/
+*运行的时候输入在项目文件下面找到/Debug文件夹，打开cmd在此目录下，执行该文件下的WordCount.exe：
+*WordCount.exe  -[c][w] [文件全路径]  
+ */
 int main(int   argc,   char*   argv[])
 {
 	int i=0;
-	/*
-	model=c:读字母数目
-	model=w:读单词的数目
-	*/
 	char model=NULL;
 	char *addr;
 	FILE* f;
@@ -64,8 +60,8 @@ int main(int   argc,   char*   argv[])
 						while(i<len)
 							{
 								//putchar(buf[i]);
-								//找出英文字母
-								if((buf[i]>='a'&&buf[i]<='z')||(buf[i]>='A'&&buf[i]<='Z'))
+//找出英文字母
+	if((buf[i]>='a'&&buf[i]<='z')||(buf[i]>='A'&&buf[i]<='Z'))
 									{
 										count+=1;//统计字母数目加1
 									}
