@@ -2,9 +2,17 @@
 #include<stdlib.h>
 #include<String.h>
 //函数入口
+/*
+*执行的时候输入：
+*WordCount.exe -[c][w] [文件名全路径]
+*/
 int main(int   argc,   char*   argv[])
 {
 	int i=0;
+	/*
+	model=c:读字母数目
+	model=w:读单词的数目
+	*/
 	char model=NULL;
 	char *addr;
 	FILE* f;
